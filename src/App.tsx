@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import { setTokenSourceMapRange } from 'typescript';
 import './css/App.css';
 
@@ -7,7 +6,6 @@ import Home from './pages/Home';
 
 const App = (): JSX.Element => {
 
-  const [name, setName] = useState('Goncalo');
 
   return (
     <React.Fragment>
@@ -28,9 +26,6 @@ const App = (): JSX.Element => {
               About
             </a>
           </button>
-          <button onClick={() => setName(name + ' clicked')}> Change name </button>
-          <button onClick={() => setName('Goncalo')}> Reset name </button>
-          <div>{name}</div>
         </div>
         <Home />
         <div style={{ backgroundColor: 'green', width: '100vw', height: '100vh' }} id='projects' />
