@@ -9,16 +9,23 @@ const Home = () => {
             <div style={{
                 height: '100%',
                 flexGrow: 1,
-            }} />
+                display: 'flex',
+                justifyContent: 'flex-start',
+                alignItems: 'center',
+            }}>
+                <div style={{ width: '100px', height: '100px', margin: '100px', backgroundColor: 'orange' }} />
+            </div>
             <div style={{
                 height: '100%',
                 flexGrow: 1,
-            }} />
-
-            <div style={{
-                position: 'absolute',
-                pointerEvents: 'none',
+                display: 'flex',
+                justifyContent: 'flex-end',
+                alignItems: 'center',
             }}>
+                <div style={{ width: '100px', height: '100px', margin: '100px', backgroundColor: 'orange' }} />
+            </div>
+
+            <div className='goncalo-photo-container'>
                 <img src={GoncaloPhoto} className='goncalo-photo' alt='goncalo-main' />
             </div>
 
