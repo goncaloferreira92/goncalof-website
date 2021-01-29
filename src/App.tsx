@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { setTokenSourceMapRange } from 'typescript';
 import './css/App.css';
 
+import Home from './pages/Home';
+
 const App = (): JSX.Element => {
 
   const [name, setName] = useState('Goncalo');
@@ -30,7 +32,7 @@ const App = (): JSX.Element => {
           <button onClick={() => setName('Goncalo')}> Reset name </button>
           <div>{name}</div>
         </div>
-        <div style={{ backgroundColor: 'orange', width: '100vw', height: '100vh' }} id='home' />
+        <Home />
         <div style={{ backgroundColor: 'green', width: '100vw', height: '100vh' }} id='projects' />
         <div style={{ backgroundColor: 'blue', width: '100vw', height: '100vh' }} id='about' />
       </div>
