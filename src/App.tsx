@@ -18,7 +18,7 @@ const App = (): JSX.Element => {
           </button>
           <button>
             <a href='#projects'>
-              Projects
+              Projects / work
             </a>
           </button>
           <button>
@@ -26,10 +26,24 @@ const App = (): JSX.Element => {
               About
             </a>
           </button>
+          <button>
+            <a href='#blog'>
+              Blog
+            </a>
+          </button>
+          <button>
+            <a href='#contact'>
+              Contact
+            </a>
+          </button>
         </div>
+
         <Home />
+
         <div style={{ backgroundColor: 'green', width: '100vw', height: '100vh' }} id='projects' />
         <div style={{ backgroundColor: 'blue', width: '100vw', height: '100vh' }} id='about' />
+        <div style={{ backgroundColor: 'green', width: '100vw', height: '100vh' }} id='blog' />
+        <div style={{ backgroundColor: 'blue', width: '100vw', height: '100vh' }} id='contact' />
       </div>
     </React.Fragment>
   );

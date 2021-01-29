@@ -1,35 +1,25 @@
 import React from 'react';
 
+import GoncaloPhoto from '../img/goncalo_photo.png';
+
 const Home = () => {
     return (
-        <div style={{
-            backgroundColor: 'orange',
-            width: '100vw',
-            height: '100vh',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-        }} id='home'>
+        <div className='home-main-container' id='home'>
 
             <div style={{
                 height: '100%',
                 flexGrow: 1,
-                border: '1px solid green',
             }} />
             <div style={{
                 height: '100%',
                 flexGrow: 1,
-                border: '1px solid green',
             }} />
 
             <div style={{
                 position: 'absolute',
-                height: '100px',
-                width: '100px',
-                border: '1px solid blue',
                 pointerEvents: 'none',
             }}>
-                <h1>Chupa-mos Dani</h1>
+                <img src={GoncaloPhoto} className='goncalo-photo' alt='goncalo-main' />
             </div>
 
         </div>
