@@ -28,7 +28,9 @@ const Home = () => {
                 width: '100px',
                 border: '1px solid blue',
                 pointerEvents: 'none',
-            }} />
+            }}>
+                <h1>Chupa-mos Dani</h1>
+            </div>
 
         </div>
     )
