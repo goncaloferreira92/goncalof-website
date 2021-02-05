@@ -105,6 +105,23 @@ body {
     .right-text { justify-content: flex-end; }
 }
 
+#work {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+
+// Card
+.card-component-container {
+    @include boxShadowMedium();
+    background-color: green;
+    min-width: 400px;
+    min-height: 400px;
+    margin: 7.5px 15px;
+}
+
 @media (min-width: 960px) {
     .child {
         opacity: 1 !important;

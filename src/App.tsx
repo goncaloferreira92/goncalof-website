@@ -3,6 +3,7 @@ import { setTokenSourceMapRange } from 'typescript';
 import './css/App.css';
 
 import Home from './pages/Home';
+import Projects from './pages/Projects';
 
 const App = (): JSX.Element => {
   return (
@@ -37,8 +38,8 @@ const App = (): JSX.Element => {
         </div> */}
 
         <Home />
+        <Projects />
 
-        <div style={{ backgroundColor: 'green', width: '100vw', height: '100vh' }} id='work' />
         <div style={{ backgroundColor: 'blue', width: '100vw', height: '100vh' }} id='about' />
         <div style={{ backgroundColor: 'green', width: '100vw', height: '100vh' }} id='blog' />
         <div style={{ backgroundColor: 'blue', width: '100vw', height: '100vh' }} id='contact' />
