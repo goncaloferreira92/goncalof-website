@@ -1,5 +1,6 @@
 // Variables
-$main-color: #333333;
+$main-black: #333333;
+$main-white: #F2F2F2;
 
 // Mixins
 @mixin boxShadowMedium() {
@@ -58,13 +59,15 @@ body {
     overflow: overlay;
 }
 
+
+
 .home-main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: $main-color;
+    background-color: $main-black;
     .goncalo-photo-container {
         position: absolute;
     }
@@ -78,7 +81,36 @@ body {
             @include defaultAnimTransition();
         }
     }
+    .text-and-links {
+        position: absolute;
+        color: $main-white;
+        width: 300px;
+        border: 1px solid orange;
+    }
+    .left-text,
+    .right-text {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        flex-grow: 1;
+        .child {
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+            background-color: orange;
+            opacity: 0;
+        }
+    }
+    .left-text { justify-content: flex-start; }
+    .right-text { justify-content: flex-end; }
 }
+
+@media (min-width: 960px) {
+    .child {
+        opacity: 1 !important;
+    }
+}
+
 
 
 

@@ -5,12 +5,10 @@ import './css/App.css';
 import Home from './pages/Home';
 
 const App = (): JSX.Element => {
-
-
   return (
     <React.Fragment>
       <div>
-        <div style={{ position: 'fixed', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
+        {/* <div style={{ position: 'fixed', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
           <button>
             <a href='#home'>
               Home
@@ -36,11 +34,11 @@ const App = (): JSX.Element => {
               Contact
             </a>
           </button>
-        </div>
+        </div> */}
 
         <Home />
 
-        <div style={{ backgroundColor: 'green', width: '100vw', height: '100vh' }} id='projects' />
+        <div style={{ backgroundColor: 'green', width: '100vw', height: '100vh' }} id='work' />
         <div style={{ backgroundColor: 'blue', width: '100vw', height: '100vh' }} id='about' />
         <div style={{ backgroundColor: 'green', width: '100vw', height: '100vh' }} id='blog' />
         <div style={{ backgroundColor: 'blue', width: '100vw', height: '100vh' }} id='contact' />
