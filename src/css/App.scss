@@ -75,7 +75,7 @@ body {
         max-height: 80vh;
         max-width: 90vw;
         @include boxShadowMedium();
-        @include defaultAnimTransition();
+        // @include defaultAnimTransition();
         &:hover {
             @include boxShadowHover();
             @include defaultAnimTransition();
