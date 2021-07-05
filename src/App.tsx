@@ -13,6 +13,7 @@ import Blog from "./pages/Blog";
 import Contacts from "./pages/Contacts"
 
 const App: FunctionComponent = (): JSX.Element => {
+  // TODO Goncalo: DarkTheme, Provider, Animations and funny content (designer that can code!)
   return (
     <Grid container>
 
