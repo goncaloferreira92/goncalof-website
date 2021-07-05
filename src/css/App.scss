@@ -115,8 +115,7 @@ body {
 
 // Card
 .card-component-container {
-    @include boxShadowMedium();
-    background-color: green;
+    // @include boxShadowMedium();
     min-width: 400px;
     min-height: 400px;
     margin: 7.5px 15px;

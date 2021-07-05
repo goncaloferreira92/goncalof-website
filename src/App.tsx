@@ -1,50 +1,32 @@
-import React from 'react';
-import { setTokenSourceMapRange } from 'typescript';
-import './css/App.css';
+import React, { FunctionComponent } from "react";
+import "./css/App.css";
 
-import Home from './pages/Home';
-import Projects from './pages/Projects';
+import {
+  Grid,
+} from "@material-ui/core";
 
-const App = (): JSX.Element => {
+// Pages
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import About from "./pages/About";
+import Blog from "./pages/Blog";
+import Contacts from "./pages/Contacts"
+
+const App: FunctionComponent = (): JSX.Element => {
   return (
-    <React.Fragment>
-      <div>
-        {/* <div style={{ position: 'fixed', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-          <button>
-            <a href='#home'>
-              Home
-            </a>
-          </button>
-          <button>
-            <a href='#projects'>
-              Projects / work
-            </a>
-          </button>
-          <button>
-            <a href='#about'>
-              About
-            </a>
-          </button>
-          <button>
-            <a href='#blog'>
-              Blog
-            </a>
-          </button>
-          <button>
-            <a href='#contact'>
-              Contact
-            </a>
-          </button>
-        </div> */}
+    <Grid container>
 
-        <Home />
-        <Projects />
+      <Home />
 
-        <div style={{ backgroundColor: 'blue', width: '100vw', height: '100vh' }} id='about' />
-        <div style={{ backgroundColor: 'green', width: '100vw', height: '100vh' }} id='blog' />
-        <div style={{ backgroundColor: 'blue', width: '100vw', height: '100vh' }} id='contact' />
-      </div>
-    </React.Fragment>
+      <Projects />
+
+      <About />
+
+      <Blog />
+
+      <Contacts />
+
+    </Grid>
   );
 }
 
