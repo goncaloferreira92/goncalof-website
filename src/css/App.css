@@ -4,6 +4,7 @@ body, html {
   height: 100vh;
   padding: 0;
   margin: 0;
+  color: #F2F2F2;
 }
 
 body ::-webkit-scrollbar, html ::-webkit-scrollbar {
@@ -69,7 +70,11 @@ body {
   position: absolute;
   color: #F2F2F2;
   width: 300px;
-  border: 1px solid orange;
+}
+
+.home-main-container .text-and-links a {
+  color: #F2F2F2;
+  text-decoration: none;
 }
 
 .home-main-container .left-text,
@@ -84,6 +89,30 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  font-weight: bold;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+.home-main-container .left-text .side-text,
+.home-main-container .right-text .side-text {
+  max-width: 260px;
+  color: #666666;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+}
+
+.home-main-container .left-text .side-text:hover,
+.home-main-container .right-text .side-text:hover {
+  color: #F2F2F2;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
 }
 
 .home-main-container .left-text .child,
@@ -91,7 +120,6 @@ body {
   width: 100px;
   height: 100px;
   margin: 100px;
-  background-color: orange;
   opacity: 0;
 }
 
@@ -99,12 +127,14 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-left: 5%;
 }
 
 .home-main-container .right-text {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-right: 5%;
 }
 
 #work {
@@ -126,7 +156,7 @@ body {
 }
 
 @media (min-width: 960px) {
-  .child {
+  .side-text {
     opacity: 1 !important;
   }
 }
