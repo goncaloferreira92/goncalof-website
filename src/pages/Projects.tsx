@@ -23,18 +23,8 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
 
     return (
         <div id='work'>
-            <h1 style={{ position: 'absolute' }}>WORK</h1>
-            <div style={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'center',
-                alignItems: 'center',
-                width: '80vw',
-                height: "100%",
-                flexWrap: 'wrap',
-                padding: '15px',
-                backgroundColor: "pink",
-            }}>
+            <h1 className="title">WORK</h1>
+            <div className="main-container">
                 <Grid container spacing={5} style={{
                     display: "flex",
                     justifyContent: "center",
